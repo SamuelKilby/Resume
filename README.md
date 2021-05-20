@@ -27,3 +27,7 @@ https://www.javatpoint.com/java-jmenuitem-and-jmenu
 https://docs.oracle.com/javase/tutorial/uiswing/events/actionlistener.html
 
 https://docs.oracle.com/javase/7/docs/api/javax/swing/JTextArea.html
+
+https://stackoverflow.com/questions/13662618/how-to-add-text-to-jframe
+
+https://www.javatpoint.com/java-jpopupmenu
