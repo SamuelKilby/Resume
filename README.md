@@ -14,3 +14,16 @@ https://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuBar.html
 
 https://docs.oracle.com/javase/7/docs/api/javax/swing/JMenu.html
 
+https://docs.oracle.com/javase/tutorial/uiswing/components/frame.html
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/JMenuItem.html
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/Action.html
+
+https://docs.oracle.com/javase/7/docs/api/java/awt/Button.html
+
+https://www.javatpoint.com/java-jmenuitem-and-jmenu
+
+https://docs.oracle.com/javase/tutorial/uiswing/events/actionlistener.html
+
+https://docs.oracle.com/javase/7/docs/api/javax/swing/JTextArea.html
