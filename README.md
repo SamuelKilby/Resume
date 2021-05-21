@@ -31,3 +31,9 @@ https://docs.oracle.com/javase/7/docs/api/javax/swing/JTextArea.html
 https://stackoverflow.com/questions/13662618/how-to-add-text-to-jframe
 
 https://www.javatpoint.com/java-jpopupmenu
+
+https://www.w3schools.com/html/html_formatting.asp
+
+http://www1.se.cuhk.edu.hk/~seem3460/lecture/Java-GUI-layout-button-2016.pdf
+
+https://www.geeksforgeeks.org/difference-between-awt-and-swing-in-java/

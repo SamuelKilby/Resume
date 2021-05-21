@@ -1,5 +1,9 @@
 import javax.swing.*;
-import java.awt.event.*;  
+import java.awt.event.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension; 
 public class Resume implements ActionListener{
     JFrame frame;
     JMenuBar menu;
@@ -7,13 +11,12 @@ public class Resume implements ActionListener{
     JMenuItem UNCC, RCCC, kellyServices, rentACenter, staffmark, archerControls, carolinasMedical,
             gitHub, codingLang, compSciConcepts, software, communication, critThink, teamwork,
             positiveAttitude, workEthic, leadership, piedmontBaptist, mainStreet;
+    JPanel main;
     JLabel text;
 
     Resume() {
         frame = new JFrame("Samuel Kilby's Resume");
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
-        frame.setUndecorated(true);
-        frame.getRootPane().setWindowDecorationStyle(JRootPane.FRAME);
         frame.setSize(700, 500);
         menu = new JMenuBar();
         home = new JMenu("Home"); home.addActionListener(this);
@@ -43,7 +46,13 @@ public class Resume implements ActionListener{
         piedmontBaptist = new JMenuItem("Piedmont Baptist Church"); piedmontBaptist.addActionListener(this);
         mainStreet = new JMenuItem("Main Street Mission"); mainStreet.addActionListener(this);
 
-        text = new JLabel("welcome to my resume. Click anywhere to begin");
+        main = new JPanel();
+        main.setBackground(Color.MAGENTA);
+        main.setPreferredSize(new Dimension(700, 500));
+        text = new JLabel("welcome to my resume. Does it work?");
+        main.add(text);
+        frame.getContentPane().add(main);
+        frame.pack();
         
         menu.add(home); menu.add(education); menu.add(workHistory); menu.add(skills); menu.add(softSkills); menu.add(volunteerWork);
         education.add(UNCC); education.add(RCCC);
@@ -55,15 +64,14 @@ public class Resume implements ActionListener{
         volunteerWork.add(piedmontBaptist); volunteerWork.add(mainStreet);
         frame.add(menu);
         frame.setJMenuBar(menu);
-        frame.add(text);
         frame.setVisible(true);
     }//end of constructor
     @Override
     public void actionPerformed(ActionEvent event) {
-        frame.remove(text);
+        frame.remove(main);
         frame.repaint();
         if(event.getSource() == UNCC) {
-        text = new JLabel("<html><center>Bachelors Degree n Stuff</html>");
+            
         }
         if(event.getSource() == RCCC) {
         text = new JLabel("<html>This is Rowan Cabarrus' info dump</html>");
@@ -71,8 +79,7 @@ public class Resume implements ActionListener{
         if(event.getSource() == home) {
             text = new JLabel("welcome back");
         }
-
-        frame.add(text);
+        frame.add(main, BorderLayout.CENTER);
         frame.setVisible(true);
     }
  public static void main(String[] args) {
