@@ -37,7 +37,7 @@ ta.cut();
 if(e.getSource()==paste)    
 ta.paste();    
 if(e.getSource()==copy)    
-ta = new JTextArea("uyfgu ");    
+ta.copy();  
 f.add(ta);
 ta.setVisible(true);
 if(e.getSource()==selectAll)    
